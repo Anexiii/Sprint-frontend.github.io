@@ -21,7 +21,7 @@
 /* Aplica la animación a todos los elementos <h1> */
 h1.slide-in-from-left {
 animation: slideInFromLeft 2s ease-in-out;
-font-size: 90px;
+font-size: 85px;
 }
 
 /* Aplica la animación a todos los elementos <h2> */
