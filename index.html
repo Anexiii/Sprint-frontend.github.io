@@ -213,7 +213,44 @@
   </section>
 </main> 
 <footer>
+<div class="comentarios"> 
+<h1 class="comentariosH">Comentarios!</h1>
+<ul  id="comentarios">
+  <!-- Aquí puedes mantener los comentarios existentes -->
+  <li>Una pagina fascinante!</li>
+  <li>Increible, aunque hay mas cafés por agregar!</li>
+  <li>Me gusta mucho el Cappuccino</li>
+</ul>
+<input type="text" id="nuevoComentario" placeholder="Escribe tu comentario">
+<button id="agregarComentario">></button>
+<img src="./imagenes/UEl2-1--unscreen.gif" alt="Funny image" class="cafegif">
+</div>
+ 
+
+  <script src="main.js"></script>
       <!-- Pie de página, con información de derechos de autor -->
+      <div class="form">
+        <h1 class="formH">Contactanos!</h1>
+        <form action="URL_del_servicio_de_formulario" target="_blank" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+      
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+      
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required>
+      
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+      
+          <button type="submit">Enviar</button>
+      </form>
+      <div id="mensaje-enviado" style="display: none;"></div>
+
+      </div>
+      <div id="mensaje-enviado" style="display: none;"></div>
+
   <div class="container">
     <p>&copy; Delgado L. Joaquin 2023</p>
   </div>

@@ -4,6 +4,8 @@
   color: rgb(200, 207, 97);
 }
 
+
+
 /* Define la animación para el desplazamiento desde la izquierda */
 @keyframes slideInFromLeft {
 0% {
@@ -19,6 +21,7 @@
 /* Aplica la animación a todos los elementos <h1> */
 h1.slide-in-from-left {
 animation: slideInFromLeft 2s ease-in-out;
+font-size: 100px;
 }
 
 /* Aplica la animación a todos los elementos <h2> */
@@ -35,6 +38,7 @@ html {
 h1 {
   font-size: 3.5em;
 }
+
 h2 {
   font-size: 2.7em;
 }
@@ -63,7 +67,7 @@ button:hover {
 
 /* Color de acento personalizado */
 .color-acento {
-  color: #442304;
+  color: #bb997a;
 }
 
 /* Estilos generales de los contenedores */
@@ -113,25 +117,28 @@ header a:hover {
   height: 90vh;
   color: rgb(200, 207, 97);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./imagenes/close-up-of-coffee-in-cup-royalty-free-image-1568292874.jpg");
+    url("./imagenes/hero-coffe.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover ;
   background-position: center center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 48px;
   text-align: center;
+  background-color: rgb(65, 30, 1);
+
 }
 
 /* Estilos de la sección "cafe" */
 #cafe .container {
   text-align: center;
   padding: 200px 12px;
+  background-color: rgb(32, 15, 1);
 }
 
 /* Estilos de la sección "tipos" */
 #tipos {
-  background-color: rgb(30, 30, 30);
-  color: rgb(226, 219, 212);
+  background-color: rgb(32, 15, 1);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -158,6 +165,9 @@ header a:hover {
   text-align: center;
   padding: 200px 12px;
 }
+#comohacercafe{
+  background-color: rgb(32, 15, 1);
+}
 
 #comohacercafe li {
   margin: 15px 0px;
@@ -166,7 +176,7 @@ header a:hover {
 
 /* Estilos del pie de página */
 footer {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(75, 34, 1);
 }
 
 footer p {
@@ -181,6 +191,120 @@ footer .container {
   justify-content: center;
   align-items: flex-end;
 }
+/* Estilo para la sección de comentarios y GIF */
+.comentarios {
+  display: flex; /* Utiliza un contenedor flex para alinear elementos en fila */
+  align-items: center; /* Centra verticalmente los elementos */ 
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben en el ancho disponible */
+  background-color: rgb(32, 15, 1);
+}
+
+/* Estilo para los comentarios */
+#comentarios {
+  flex: 1; /* Permite que los comentarios ocupen todo el espacio disponible */
+  list-style: none;
+  padding: 0;
+  
+}
+
+.comentarios li {
+  word-wrap: break-word; /* Evita que las palabras largas rompan el diseño */
+  max-width: 400px; /* Establece un ancho máximo para los comentarios */
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 45px;
+}
+
+/* Estilo para el botón "Agregar Comentario" y el campo de entrada */
+#agregarComentario {
+  background-color: rgb(32, 15, 1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 20px; /* Agrega un margen izquierdo para separar el botón del GIF */
+}
+
+#agregarComentario:hover {
+  background-color: #fae207;
+  color: black;
+}
+
+#nuevoComentario {
+  flex: 1; /* Permite que el campo de entrada ocupe todo el espacio disponible */
+  height: 70px;
+  font-size: 18px;
+  border-radius: 3px;
+  margin: 5px 0;
+  margin-left: 20px; /* Agrega un margen izquierdo para separar el campo de entrada del GIF */
+}
+
+/* Estilo para el GIF */
+.cafegif {
+  width: 150px; /* Ajusta el ancho de tu GIF según tus necesidades */
+  /* margin-left: 20px;  Quitar este margen para que el GIF no tenga margen izquierdo */
+  margin-top: 20px; /* Agrega un margen superior para separar el GIF del contenido anterior */
+}
+
+.comentariosH{
+  font-size: 25px;
+}
+/* Estilos para la sección del formulario de contacto y comentarios en dispositivos móviles */
+.form {
+  background-color: rgb(32, 15, 1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgb(200, 207, 97);
+}
+
+.form textarea,
+.form input[type="text"],
+.form input[type="email"] {
+  width: 100%; /* Utiliza el ancho completo disponible en dispositivos móviles */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #3f2501;
+}
+
+.form button {
+  background-color: #442304;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilos para dispositivos móviles: Alinea el botón "Agregar Comentario" y el campo de entrada */
+@media (max-width: 768px) {
+  .comentarios {
+    flex-direction: column; /* Apila elementos en dispositivos móviles */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+
+  #agregarComentario,
+  #nuevoComentario {
+    width: 100%; /* Utiliza el ancho completo disponible en dispositivos móviles */
+    margin: 5px 0;
+  }
+}
+
+
 
 /* Estilos para pantallas más grandes (media queries) */
 @media (min-width: 720px) {
@@ -188,6 +312,7 @@ footer .container {
   header {
       position: fixed;
       width: 100%;
+      
   }
 
   header .container {
@@ -227,7 +352,7 @@ footer .container {
 
   /* Estilos específicos para la imagen de fondo en la sección "cafe" */
   .img-container {
-      background-image: url("https://picsum.photos/id/63/5000/2813/?blur=7");
+      background-image: url("./imagenes/cafe-animado.gif");
       background-size: cover;
       background-position: center center;
       height: 800px;
@@ -308,9 +433,10 @@ footer .container {
   /* Estilos de la sección "comohacercafe" en pantallas más grandes */
   #comohacercafe {
       display: flex;
+      display: block;
       justify-content: flex-start;
       align-items: center;
-      background-image: url("./imagenes/1366_2000.jpg");
+      background-image: url("./imagenes/1366_2000\ .jpg");
       background-repeat: no-repeat;
       background-size: 650px 900px;
       background-position: 0 0;
@@ -324,6 +450,114 @@ footer .container {
   #comohacercafe ul {
       margin-left: 700px;
   }
+
+/* Estilo para la sección de comentarios y GIF */
+.comentarios {
+  display: flex; /* Utiliza un contenedor flex para alinear elementos en fila */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: rgb(32, 15, 1);
+}
+
+/* Estilo para los comentarios */
+#comentarios {
+  flex: 1; /* Permite que los comentarios ocupen todo el espacio disponible */
+  list-style: none;
+  padding: 0;
+  
+}
+
+.comentarios li {
+  word-wrap: break-word; /* Evita que las palabras largas rompan el diseño */
+  max-width: 400px; /* Establece un ancho máximo para los comentarios */
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #5c3904;
+  border-radius: 45px;
+}
+
+
+/* Estilo para el botón "Agregar Comentario" y el campo de entrada */
+#agregarComentario {
+  background-color: #5c3904;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#agregarComentario:hover {
+  background-color: #fae207;
+  color: black;
+}
+
+#nuevoComentario {
+  flex: 1; /* Permite que el campo de entrada ocupe todo el espacio disponible */
+  height: 70px;
+  font-size: 18px;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+/* Estilo para el GIF */
+.cafegif {
+  width: 200px; /* Ajusta el ancho de tu GIF según tus necesidades */
+  margin-left: 20px; /* Agrega un margen a la izquierda para separar el GIF de los comentarios */
+}
+
+.comentariosH{
+  font-size: 25px;
+}
+
+  /*seccion del formulario de contacto*/
+  .form {
+    background-color: rgb(32, 15, 1); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+  }
+  .form label {
+    display: block; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    color: rgb(200, 207, 97);
+    
+  }
+.form textarea {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #3f2501;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form textarea{
+  color: #3f2501;
+}
+.form button {
+  background-color: #442304; /* Cambia el color de fondo del botón */
+  color: white; /* Cambia el color del texto del botón */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px; /* Agrega un espacio superior al botón */
+  
+}
+.form button:hover {
+  background-color: #441e04; /* Cambia el color de fondo al pasar el mouse */
+}
+.formH:hover{
+  color: black;
+  background-color: rgb(200, 207, 97);
+  border-radius: 10px;
+}
+
 
   /* Estilos de pie de página en pantallas más grandes */
   footer .container {
