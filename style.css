@@ -193,15 +193,15 @@ footer .container {
 }
 /* Estilo para la sección de comentarios y GIF */
 .comentarios {
-  display: flex; /* Utiliza un contenedor flex para alinear elementos en fila */
-  align-items: center; /* Centra verticalmente los elementos */ 
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben en el ancho disponible */
+  display: flex; 
+  align-items: center; 
+  flex-wrap: wrap;
   background-color: rgb(32, 15, 1);
 }
 
 /* Estilo para los comentarios */
 #comentarios {
-  flex: 1; /* Permite que los comentarios ocupen todo el espacio disponible */
+  flex: 1; 
   list-style: none;
   padding: 0;
   
@@ -226,7 +226,7 @@ footer .container {
   border-radius: 3px;
   cursor: pointer;
   margin-top: 10px;
-  margin-left: 20px; /* Agrega un margen izquierdo para separar el botón del GIF */
+  margin-left: 20px; 
 }
 
 #agregarComentario:hover {
@@ -235,25 +235,24 @@ footer .container {
 }
 
 #nuevoComentario {
-  flex: 1; /* Permite que el campo de entrada ocupe todo el espacio disponible */
+  flex: 1; 
   height: 70px;
   font-size: 18px;
   border-radius: 3px;
   margin: 5px 0;
-  margin-left: 20px; /* Agrega un margen izquierdo para separar el campo de entrada del GIF */
+  margin-left: 20px; 
 }
 
 /* Estilo para el GIF */
 .cafegif {
-  width: 150px; /* Ajusta el ancho de tu GIF según tus necesidades */
-  /* margin-left: 20px;  Quitar este margen para que el GIF no tenga margen izquierdo */
-  margin-top: 20px; /* Agrega un margen superior para separar el GIF del contenido anterior */
+  width: 150px; 
+  margin-left: 20px;  
+  margin-top: 20px; 
 }
 
 .comentariosH{
   font-size: 25px;
 }
-/* Estilos para la sección del formulario de contacto y comentarios en dispositivos móviles */
 .form {
   background-color: rgb(32, 15, 1);
   padding: 20px;
@@ -272,7 +271,7 @@ footer .container {
 .form textarea,
 .form input[type="text"],
 .form input[type="email"] {
-  width: 100%; /* Utiliza el ancho completo disponible en dispositivos móviles */
+  width: 100%; 
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
@@ -290,16 +289,16 @@ footer .container {
   margin-top: 10px;
 }
 
-/* Estilos para dispositivos móviles: Alinea el botón "Agregar Comentario" y el campo de entrada */
+
 @media (max-width: 768px) {
   .comentarios {
-    flex-direction: column; /* Apila elementos en dispositivos móviles */
-    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   #agregarComentario,
   #nuevoComentario {
-    width: 100%; /* Utiliza el ancho completo disponible en dispositivos móviles */
+    width: 100%; 
     margin: 5px 0;
   }
 }
@@ -453,14 +452,14 @@ footer .container {
 
 /* Estilo para la sección de comentarios y GIF */
 .comentarios {
-  display: flex; /* Utiliza un contenedor flex para alinear elementos en fila */
-  align-items: center; /* Centra verticalmente los elementos */
+  display: flex; 
+  align-items: center; 
   background-color: rgb(32, 15, 1);
 }
 
 /* Estilo para los comentarios */
 #comentarios {
-  flex: 1; /* Permite que los comentarios ocupen todo el espacio disponible */
+  flex: 1; 
   list-style: none;
   padding: 0;
   
@@ -494,7 +493,7 @@ footer .container {
 }
 
 #nuevoComentario {
-  flex: 1; /* Permite que el campo de entrada ocupe todo el espacio disponible */
+  flex: 1; 
   height: 70px;
   font-size: 18px;
   border-radius: 3px;
@@ -503,8 +502,8 @@ footer .container {
 
 /* Estilo para el GIF */
 .cafegif {
-  width: 200px; /* Ajusta el ancho de tu GIF según tus necesidades */
-  margin-left: 20px; /* Agrega un margen a la izquierda para separar el GIF de los comentarios */
+  width: 200px; 
+  margin-left: 20px; 
 }
 
 .comentariosH{
@@ -546,7 +545,7 @@ footer .container {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  margin-top: 10px; /* Agrega un espacio superior al botón */
+  margin-top: 10px; 
   
 }
 .form button:hover {
