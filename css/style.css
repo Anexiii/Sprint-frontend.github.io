@@ -123,7 +123,7 @@ header a:hover {
   height: 90vh;
   color: rgb(200, 207, 97);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("imagenes/cafe-hero.jpg");
+    url("/imagenes/cafe-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -362,7 +362,7 @@ footer .container {
 
   /* Estilos específicos para la imagen de fondo en la sección "cafe" */
   .img-container {
-      background-image: url("imagenes/cafe-animado.gif");
+      background-image: url("/imagenes/cafe-animado.gif");
       background-size: cover;
       background-position: center center;
       height: 800px;
@@ -412,40 +412,40 @@ footer .container {
 
   /* Establece imágenes de fondo para cada tarjeta */
   .carta:nth-child(1) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Cafe_comun.JPG");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Cafe_comun.JPG");
   }
   .carta:nth-child(2) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Ristretto.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Ristretto.jpg");
   }
   .carta:nth-child(3) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Espresso.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Espresso.jpg");
   }
   .carta:nth-child(4) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Espresso_intenso.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Espresso_intenso.jpg");
   }
   .carta:nth-child(5) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Espresso_lungo.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Espresso_lungo.jpg");
   }
   .carta:nth-child(6) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Caffè_Crema.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Caffè_Crema.jpg");
   }
   .carta:nth-child(7) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Espresso\ Macchiato.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Espresso\ Macchiato.jpg");
   }
   .carta:nth-child(8) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Cappuccino.png");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Cappuccino.png");
   }
   .carta:nth-child(9) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Latte\ Macchiato.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Latte\ Macchiato.jpg");
   }
   .carta:nth-child(10) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Flat\ white.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Flat\ white.jpg");
   }
   .carta:nth-child(11) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/Café\ Americano.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/Café\ Americano.jpg");
   }
   .carta:nth-child(12) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/caffe-latte.jpg");
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/caffe-latte.jpg");
   }
 
   /* Estilos de la sección "comohacercafe" en pantallas más grandes */
@@ -454,7 +454,7 @@ footer .container {
       display: block;
       justify-content: flex-start;
       align-items: center;
-      background-image: url("imagenes/tipos.jpg");
+      background-image: url("/imagenes/tipos.jpg");
       background-repeat: no-repeat;
       background-size: 650px 900px;
       background-position: 0 0;
