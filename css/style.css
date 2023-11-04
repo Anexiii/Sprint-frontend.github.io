@@ -165,6 +165,12 @@ header a:hover {
   border-radius: 15px;
 }
 
+.carta p{
+  margin-top: 155px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 /* Estilos de la sección "comohacercafe" */
 #comohacercafe .container {
   text-align: center;
@@ -378,13 +384,19 @@ footer .container {
   }
 
   #tipos h3 {
-      margin-top: 0;
+      margin-top: 20px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #5c3904;
+      border-radius: 45px;
+
   }
   
   /* Estilos de las tarjetas en pantallas más grandes */
   #tipos .carta {
       padding: auto;
-      margin: auto;
+      margin: 100px;
       border-radius: 15px;
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -395,6 +407,8 @@ footer .container {
       height: 600px;
       overflow: hidden;
   }
+  
+
 
   /* Establece imágenes de fondo para cada tarjeta */
   .carta:nth-child(1) {
@@ -453,6 +467,7 @@ footer .container {
 
   #comohacercafe ul {
       margin-left: 700px;
+      text-align: left;
   }
 
 /* Estilo para la sección de comentarios y GIF */
