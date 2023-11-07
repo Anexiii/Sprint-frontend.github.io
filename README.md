@@ -8,6 +8,8 @@ Este es un proyecto web simple creado utilizando HTML y CSS. El proyecto consta 
 - `css/`: Carpeta que contiene archivos CSS para dar estilo a las páginas.
   - `style.css`: El archivo principal de hojas de estilo.
 - `img/`: Carpeta que almacena imágenes utilizadas en las páginas.
+- `pages/`: Carpeta que contiene archivos JavaScript.
+  - `comentarios.html`: Este archivo HTML es una extención de la pagina
 - `scripts/`: Carpeta que contiene archivos JavaScript.
   - `main.js`: Este archivo JavaScript se encarga de la funcionalidad interactiva del sitio web. Aquí se    incluye el código que maneja la validación del formulario y la adición de comentarios.
 
