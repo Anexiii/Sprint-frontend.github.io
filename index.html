@@ -215,17 +215,29 @@
   </section>
 </main> 
 <footer>
-<div class="comentarios"> 
-<h1 class="comentariosH">Comentarios!</h1>
-<ul  id="comentarios">
-  <!-- Aquí puedes mantener los comentarios existentes -->
-  <li>Una pagina fascinante!</li>
-  <li>Increible, aunque hay mas cafés por agregar!</li>
-  <li>Me gusta mucho el Cappuccino</li>
-</ul>
-<input type="text" id="nuevoComentario" placeholder="Escribe tu comentario">
-<button id="agregarComentario">></button>
-<img src="imagenes/caffe-humeante.gif" alt="Funny image" class="cafegif">
+  <div class="comentarios-container">
+    <div class="comentarios-box">
+      <h1 class="comentariosH">Comentarios</h1>
+      <div class="comentarios-scroll">
+        <ul id="comentarios" class="comentarios-list">
+          <!-- Tus comentarios aquí -->
+          <li>Una página fascinante!</li>
+          <li>Increíble, aunque hay más cafés por agregar!</li>
+          <li>Me gusta mucho el Cappuccino</li>
+          <!-- Puedes agregar más comentarios aquí -->
+        </ul>
+      </div>
+    </div>
+    <div class="comentarios-input">
+      <img src="imagenes/caffe-humeante.gif" alt="Funny image" class="cafegif">
+      <input type="text" id="nuevoComentario" placeholder="Agrega tu comentario">
+      <button id="agregarComentario">Añadir</button>
+    </div> </div>
+    <div id="verTodosComentarios" class="ver-comentarios-button">
+      <a href="pages/comentarios.html" id="mostrarComentarios" class="boton">Ver Todos los Comentarios</a>
+    </div>
+  </div>
+  
 </div>
       <!-- Pie de página, con información de derechos de autor -->
       <div class="form">
@@ -252,6 +264,9 @@
 
   <div class="container">
     <p>&copy; Delgado L. Joaquin 2023</p>
+    <a href="https://www.instagram.com/_cafesapiens_/" target="_blank" class="instagram-button">
+      <img src="imagenes/icono-distorsionado-de-instagram.png" alt="Síguenos en Instagram" class="instagram-icon">
+    </a>
   </div>
 </footer>
 <script src="scripts/main.js"></script>

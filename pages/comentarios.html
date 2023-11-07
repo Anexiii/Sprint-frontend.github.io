@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<title>Comentarios</title>
+<style>
+    /* Estilos para la página de comentarios */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #261c14;
+    }
+
+    .navbar {
+    background-color: rgb(200, 207, 97);
+    }
+
+    .navbar a {
+    color: rgb(200, 207, 97);
+    text-decoration: none;
+    }
+
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #261c14;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .comentarios {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+    .comentariosH {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #261c14;
+    }
+
+    #comentarios {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    #comentarios li {
+    background-color: #3f2501;
+    border: 1px solid rgb(200, 207, 97);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #nuevoComentario {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid rgb(200, 207, 97);
+    border-radius: 5px;
+    }
+
+    #agregarComentario {
+    background-color: #261c14;
+    color: rgb(200, 207, 97);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+
+    #agregarComentario:hover {
+    background-color: #3f2501;
+    }
+
+</style>
+</head>
+<body>
+<header>
+<!-- Navbar para la página de comentarios -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="../index.html">Inicio</a>
+    <div class="collapse navbar-collapse" id="navbarNavComentarios">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/pages/comentarios.html">Ver todos los comentarios</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+</header>
+<main>
+<div class="container">
+    <section class="comentarios">
+    <h1 class="comentariosH">Comentarios</h1>
+    <ul id="comentarios">
+        <li>Una página fascinante!</li>
+        <li>Increíble, aunque hay más cafés por agregar!</li>
+        <li>Me gusta mucho el Cappuccino</li>
+        <li>Excelente contenido sobre café.</li>
+        <li>Me encanta este sitio web.</li>
+        <li>¿Pueden recomendar algunos cafés especiales?</li>
+        <li>Gracias por compartir información tan interesante sobre café.</li>
+        <li>Este sitio web me hizo amar aún más el café.</li>
+        <li>¡Quiero probar todos los tipos de café mencionados aquí!</li>
+        <li>Espresso es mi elección favorita, ¡siempre tan sabroso!</li>
+    </ul>
+    <input type="text" id="nuevoComentario" placeholder="Escribe tu comentario">
+    <button id="agregarComentario">Añadir Comentario</button>
+    </section>
+</div>
+</main>
+<footer>
+<div class="container">
+    <p>&copy; Delgado L. Joaquin 2023</p>
+</div>
+</footer>
+<script>
+  // Función para manejar la adición de comentarios
+function manejarAgregarComentarioClick() {
+    const nuevoComentario = document.getElementById('nuevoComentario');
+    const listaComentarios = document.getElementById('comentarios');
+    const comentario = nuevoComentario.value;
+
+    if (comentario.trim() !== '') {
+    const nuevoElemento = document.createElement('li');
+    nuevoElemento.textContent = comentario;
+    listaComentarios.appendChild(nuevoElemento);
+      nuevoComentario.value = ''; // Limpia el campo de entrada
+    }
+}
+
+  // Asignar la función a un evento click en el botón
+const agregarComentarioButton = document.getElementById('agregarComentario');
+agregarComentarioButton.addEventListener('click', manejarAgregarComentarioClick);
+</script>
+</body>
+</html>

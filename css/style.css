@@ -4,8 +4,6 @@
   color: rgb(200, 207, 97);
 }
 
-
-
 /* Define la animación para el desplazamiento desde la izquierda */
 @keyframes slideInFromLeft {
 0% {
@@ -210,57 +208,88 @@ footer .container {
   justify-content: center;
   align-items: flex-end;
 }
-/* Estilo para la sección de comentarios y GIF */
-.comentarios {
-  display: flex; 
-  align-items: center; 
-  flex-wrap: wrap;
-  background-color: #261c14;
+
+/* Agrega estos estilos para darle un aspecto más atractivo a tu botón */
+.boton {
+  display: inline-block;
+  background-color: #5c3904;
+  color: rgb(200, 207, 97);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Estilo para los comentarios */
-#comentarios {
-  flex: 1; 
+/* Estilo para la sección de comentarios */
+.comentarios {
+  text-align: center;
+  background-color: #261c14;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para el encabezado "Comentarios" */
+.comentariosH {
+  font-size: 2em;
+  margin: 0;
+  color: #ffea00;
+}
+
+/* Estilo para la lista de comentarios */
+.comentarios-list {
   list-style: none;
   padding: 0;
-  
 }
 
-.comentarios li {
-  word-wrap: break-word; /* Evita que las palabras largas rompan el diseño */
-  max-width: 400px; /* Establece un ancho máximo para los comentarios */
-  margin: 5px 0;
-  border: 1px solid #ccc;
+.comentarios-list li {
+  word-wrap: break-word;
+  border: 1px solid #3f2501;
   padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 45px;
+  background-color: #261c14;
+  border-radius: 10px;
+  color: #ffea00;
+  margin: 5px 0;
 }
 
-/* Estilo para el botón "Agregar Comentario" y el campo de entrada */
+/* Estilo para el campo de entrada de comentario y el botón */
+.comentarios-input {
+  display: flex;
+  gap: 10px;
+}
+
+#nuevoComentario {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #3f2501;
+}
+
 #agregarComentario {
-  background-color: #261c14;
+  background-color: #5c3904;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 20px; 
+  transition: background-color 0.3s;
 }
 
 #agregarComentario:hover {
   background-color: #fae207;
-  color: black;
+  color: #5c3904;
 }
 
-#nuevoComentario {
-  flex: 1; 
-  height: 70px;
-  font-size: 18px;
-  border-radius: 3px;
-  margin: 5px 0;
-  margin-left: 20px; 
+/* Estilo para el botón "Ver Todos los Comentarios" */
+.ver-comentarios-button {
+  margin-top: 20px;
 }
+
 
 /* Estilo para el GIF */
 .cafegif {
@@ -307,6 +336,101 @@ footer .container {
   cursor: pointer;
   margin-top: 10px;
 }
+
+.instagram-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid rgb(200, 207, 97); /* Color de borde al botón */
+  background-color: #261c14; /* Color de fondo al botón */
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease; 
+}
+
+.instagram-button:hover {
+  background-color: rgb(200, 207, 97); /* Cambia el color de fondo al pasar el cursor por encima */
+}
+
+.instagram-icon {
+  width: 30px; 
+  height: 30px; 
+}
+/* Estilos para la sección de comentarios */
+.comentarios-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.comentarios-box {
+  flex: 1;
+  background-color: #261c14;
+  border: 1px solid rgb(200, 207, 97);
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comentariosH {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(200, 207, 97); /* Cambia el color del título "Comentarios" */
+}
+
+.comentarios-scroll {
+  max-height: 220px;
+}
+
+.comentarios-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comentarios-list li {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: rgb(200, 207, 97); /* Cambia el color del texto de los comentarios */
+}
+
+.comentarios-input {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cafegif {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+#nuevoComentario {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(200, 207, 97);
+  border-radius: 5px;
+}
+
+#agregarComentario {
+  background-color: #261c14; /* Cambia el color de fondo del botón "Añadir" */
+  color: rgb(200, 207, 97); /* Cambia el color del texto del botón "Añadir" */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#agregarComentario:hover {
+  background-color: rgb(200, 207, 97); /* Cambia el color de fondo del botón "Añadir" al pasar el mouse */
+}
+
+.comentariosH{
+  font-size: 25px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -463,60 +587,77 @@ footer .container {
   }
 
 
-/* Estilo para la sección de comentarios y GIF */
-.comentarios {
-  display: flex; 
-  align-items: center; 
-  background-color: #261c14;
+
+/* Estilos para la sección de comentarios */
+.comentarios-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-/* Estilo para los comentarios */
-#comentarios {
-  flex: 1; 
+.comentarios-box {
+  flex: 1;
+  background-color: #261c14;
+  border: 1px solid rgb(200, 207, 97);
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comentariosH {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(200, 207, 97); /* Cambia el color del título "Comentarios" */
+}
+
+.comentarios-scroll {
+  max-height: 220px;
+}
+
+.comentarios-list {
   list-style: none;
   padding: 0;
-  
 }
 
-.comentarios li {
-  word-wrap: break-word; /* Evita que las palabras largas rompan el diseño */
-  max-width: 400px; /* Establece un ancho máximo para los comentarios */
+.comentarios-list li {
   margin: 5px 0;
-  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: rgb(200, 207, 97); /* Cambia el color del texto de los comentarios */
+}
+
+.comentarios-input {
+  flex: 1;
   padding: 10px;
-  background-color: #5c3904;
-  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* Estilo para el botón "Agregar Comentario" y el campo de entrada */
-#agregarComentario {
-  background-color: #5c3904;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-#agregarComentario:hover {
-  background-color: #fae207;
-  color: black;
+.cafegif {
+  max-width: 100%;
+  margin-bottom: 10px;
 }
 
 #nuevoComentario {
-  flex: 1; 
-  height: 70px;
-  font-size: 18px;
-  border-radius: 3px;
-  margin: 5px 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(200, 207, 97);
+  border-radius: 5px;
 }
 
-/* Estilo para el GIF */
-.cafegif {
-  width: 200px; 
-  margin-left: 20px; 
+#agregarComentario {
+  background-color: #261c14; /* Cambia el color de fondo del botón "Añadir" */
+  color: rgb(200, 207, 97); /* Cambia el color del texto del botón "Añadir" */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#agregarComentario:hover {
+  background-color: rgb(200, 207, 97); /* Cambia el color de fondo del botón "Añadir" al pasar el mouse */
 }
 
 .comentariosH{
